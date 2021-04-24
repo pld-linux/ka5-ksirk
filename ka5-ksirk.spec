@@ -1,15 +1,15 @@
-%define		kdeappsver	20.12.3
+%define		kdeappsver	21.04.0
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		ksirk
 Summary:	ksirk
 Name:		ka5-%{kaname}
-Version:	20.12.3
+Version:	21.04.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	741055041205f2dc71869dac4ddc5cee
+# Source0-md5:	83809f5d31c3fd03b2f7bae91e60352b
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
@@ -79,9 +79,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/ksirk
 %attr(755,root,root) %{_bindir}/ksirkskineditor
-%attr(755,root,root) %{_libdir}/libiris_ksirk.so
-%attr(755,root,root) %ghost %{_libdir}/libiris_ksirk.so.2
-%attr(755,root,root) %{_libdir}/libiris_ksirk.so.2.*.*
+%{_libdir}/libiris_ksirk.so
+%ghost %{_libdir}/libiris_ksirk.so.2
+%attr(755,root,root) %{_libdir}/libiris_ksirk.so.*.*.*
 %{_desktopdir}/org.kde.ksirk.desktop
 %{_desktopdir}/org.kde.ksirkskineditor.desktop
 %{_datadir}/config.kcfg/ksirksettings.kcfg
