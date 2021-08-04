@@ -50,6 +50,12 @@ Risk. The goal of the game is simply to conquer the world by attacking
 your neighbors with your armies. Features. Support for 1-6 human or
 computer (AI) players.
 
+%description -l pl.UTF-8
+KsirK jest skomputeryzowaną wersją dobrze znanej strategicznej gry
+planszowej Ryzyko. Celem gry jest po prostu podbić świat atakując
+sąsiadów przy użyciu swoich armii. Wspiera od 1 do 6 ludzkich lub
+komputerowych (AI) graczy.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
